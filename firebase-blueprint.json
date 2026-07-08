@@ -1,0 +1,110 @@
+{
+  "collections": {
+    "users": {
+      "description": "User accounts and profile information from Google Sign-In",
+      "schema": {
+        "uid": "string",
+        "email": "string",
+        "displayName": "string",
+        "photoURL": "string",
+        "role": "string",
+        "createdAt": "timestamp",
+        "lastLoginAt": "timestamp"
+      },
+      "rules": {
+        "read": "true",
+        "write": "request.auth != null"
+      }
+    },
+    "kader": {
+      "description": "Registered Kader members",
+      "schema": {
+        "id": "string",
+        "name": "string",
+        "nik": "string",
+        "email": "string",
+        "phone": "string",
+        "dpc": "string",
+        "address": "string",
+        "gender": "string",
+        "age": "number",
+        "photoUrl": "string",
+        "status": "string",
+        "joinedDate": "string",
+        "isVerified": "boolean"
+      },
+      "rules": {
+        "read": "true",
+        "write": "true"
+      }
+    },
+    "news": {
+      "description": "News articles in DKW Garda Bangsa Papua Barat",
+      "schema": {
+        "id": "string",
+        "title": "string",
+        "excerpt": "string",
+        "content": "string",
+        "category": "string",
+        "imageUrl": "string",
+        "date": "string",
+        "author": "string",
+        "reads": "number",
+        "likes": "number"
+      },
+      "rules": {
+        "read": "true",
+        "write": "true"
+      }
+    },
+    "dpc": {
+      "description": "DPC status and member counts",
+      "schema": {
+        "id": "string",
+        "name": "string",
+        "chairman": "string",
+        "membersCount": "number",
+        "pendingCount": "number",
+        "status": "string",
+        "lastUpdate": "string",
+        "activityLevel": "number"
+      },
+      "rules": {
+        "read": "true",
+        "write": "true"
+      }
+    },
+    "messages": {
+      "description": "Contact and aspiration messages",
+      "schema": {
+        "id": "string",
+        "name": "string",
+        "email": "string",
+        "subject": "string",
+        "message": "string",
+        "date": "string",
+        "status": "string"
+      },
+      "rules": {
+        "read": "true",
+        "write": "true"
+      }
+    },
+    "settings": {
+      "description": "Website customization settings including logo, primary/secondary colors and template themes",
+      "schema": {
+        "id": "string",
+        "logoUrl": "string",
+        "primaryColor": "string",
+        "secondaryColor": "string",
+        "themeName": "string",
+        "updatedAt": "timestamp",
+        "updatedBy": "string"
+      },
+      "rules": {
+        "read": "true",
+        "write": "true"
+      }
+    }
+  }
+}

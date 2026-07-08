@@ -1,0 +1,6 @@
+{
+  "name": "DKW Garda Bangsa Papua Barat",
+  "description": "Aplikasi portal organisasi, statistik kader, berita, dan manajemen keanggotaan Dewan Koordinasi Wilayah (DKW) Garda Bangsa Provinsi Papua Barat.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
